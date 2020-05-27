@@ -1,0 +1,3 @@
+상속(inherit)
+
+margin, padding, background, border... 등의 박스 모델 속성들은 상속되지 않는다.

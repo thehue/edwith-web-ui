@@ -1,0 +1,27 @@
+가상 선택자
+ - 가상 클래스(pseudo class)
+ - 가상 요소(pseudo element)
+
+가상 클래스: 미리 정의해 놓은 상황에 적용이 되도록 약속되어있는 보이지 않는 클래스
+:pseudo-class {
+	property: value;
+}
+
+참조:https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-classes
+
+
+index1.html)
+- :first-child: 첫 번째 자식 요소 선택
+- :last-child: 마지막 자식 요소 선택
+
+
+index2.html)
+링크 관련된 가상 클래스
+- :link: 하이퍼링크이면서 아직 방문하지 않은 앵커
+- :visited: 이미 방문한 하이퍼링크를 의미
+
+index3.html)
+- :focus : 현재 입력 포커스를 갖고 있는 요소에 적용
+- :hover : 마우스 포인터가 위치해 있는 요소에 적용
+- :active : 사용자 입력에 의해 활성화된 요소에 적용
+

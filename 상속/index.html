@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style media="screen">
+      /* 0,0,0,0 */
+      * {
+        color: red;
+      }
+      /* 0,1,0,1 */
+      h1#page {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- h1의 속성을 상속받아 회색이 될 것 같지만 빨간색으로 된다. 상속된 값은 아무런 구체성을 가지지 않는다. 심지어 0,0,0,0 도 아니다.-->
+    <h1 id="page">Hello, <em>CSS</em></h1>
+  </body>
+</html>

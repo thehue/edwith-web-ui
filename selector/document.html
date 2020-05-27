@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style media="screen">
+      /*  "color"가 있는 class */
+      /*p[class~='color'] {
+        font-style: italic;
+      } */
+      /* 클래스명 전체가 color로 시작 */
+      /*
+      p[class^='color'] {
+        font-style: italic;
+      } */
+      /* 클래스명 전체중 color로 끝남*/
+      /*
+      p[class$='color'] {
+        font-style: italic;
+      } */
+      /* color가 포함됨 */
+      p[class*='color'] {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="color hot">red</p>
+    <p class="cool color">blue</p>
+    <p class="colorful nature">rainbow</p>
+  </body>
+</html>
