@@ -1,0 +1,33 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>단위 - rem</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      div {
+        font-size: 3rem;
+      }
+      #top-div {
+        font-size: 2rem;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>이 문서의 글자 크기는 16px이다.</p>
+    <div id="top-div">
+      div 요소의 글자 크기는 2rem이다. 브라우저 글자 크기의 2배로 된다.
+      <div>
+        div 요소의 글자 크기는 3rem이다. 부모 요소의 글자 크기를 상속받지
+        않는다.
+      </div>
+    </div>
+    <p>
+      rem 단위는 font-size를 브라우저를 기준으로 맞춰진다. 그리고 부모로 부터
+      상속받지 않는다.
+    </p>
+  </body>
+</html>
