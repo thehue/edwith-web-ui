@@ -1,0 +1,18 @@
+font-size 속성
+글꼴의 크기를 지정하는 속성입니다.
+  기본 값 : medium
+
+font-size: keyword | length | initial | inherit ;
+ 
+ < 속성 값 >
+keyword : medium(기본 값), xx-small, x-small, small, large, x-large, xx-large, smaller, larger
+length : px, em 등 고정 수치로 지정합니다.
+% : 부모 요소의 font-size 기준의 퍼센트로 지정합니다.
+
+* absolute size (keyword) 기본 값인 medium에 대한 상대적인 크기로, 브라우저마다 사이즈가 다르게 정의되어있습니다.
+* relative size (keyword) 부모 요소의 font-size 크기에 대해 상대적입니다. smaller는 0.8배, larger는 1.2배입니다.
+* length px, em, rem 등의 단위를 이용하여 고정된 크기를 지정할 수 있습니다. 
+  - em :  부모 요소의 font-size에 em 값을 곱한 크기 
+  - rem : 루트의 font-size에 rem 값을 곱한 크기
+* percent (%) 부모 요소의 font-size를 기준으로 백분율 계산된 값을 지정할 수 있습니다.
+* viewport units vw, vh 단위로 뷰포트를 기준으로 하여, 유동적인 font-size를 지정할 수 있습니다. vw는 뷰포트 width의 1%, vh는 뷰포트 height의 1% 값을 가집니다.
