@@ -1,0 +1,22 @@
+font-style 속성
+
+글꼴의 스타일을 지정하는 속성입니다.
+  기본 값 : normal
+font-style: normal | italic | oblique | initial | inherit;
+
+< 속성 값 >
+* normal
+  font-family 내에 분류된 기본 값
+
+* italic
+  italic 스타일로 표현합니다.
+
+* oblique
+  oblique 스타일로 표현합니다.
+
+ oblique 텍스트의 기울기에 대한 각도를 추가로 지정할 수 있습니다.
+font-weight oblique <각도>;
+
+유효한 값은 -90 ~ 90도이며, 따로 각도를 지정하지 않으면 14도가 사용됩니다. 
+양수 값은 글의 끝 부분 쪽으로 기울어지며, 음수값은 시작 부분 쪽으로 기울어집니다. 
+그러나 아직 초안 단계로 CSS Fonts Module Level 4를 지원하는 브라우저에서만 사용 가능합니다.
