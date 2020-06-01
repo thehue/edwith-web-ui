@@ -1,0 +1,8 @@
+font-variant
+글꼴의 형태를 변형하는 속성으로 소문자를 작은 대문자로 변환
+
+font-variant: normal | small-caps | initial | inherit ;
+
+< 속성 값 >
+- normal : 기본 값
+- small-caps : 소문자를 작은 대문자로 변형합니다.
