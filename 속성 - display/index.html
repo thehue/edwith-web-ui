@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+    <style>
+      /* height, width 적용이 안된디*/
+      .inline {
+        background: pink;
+        /* height: 100px;
+        width: 100px; */
+        /* margin, padding : 좌,우만 적용된다.*/
+        margin: 10px;
+        padding: 10px;
+        border: 20px solid rebeccapurple;
+      }
+
+      .block {
+        background: palevioletred;
+        height: 100px;
+        width: 100px;
+      }
+
+      .inline-block {
+        background: violet;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div style="display: inline;" class="inline">inline-box</div>
+    </div>
+    <div>
+      <div style="display: block;" class="block">block-box</div>
+    </div>
+    <div>
+      <div style="display: inline-block;" class="inline-block">
+        inline-block-box
+      </div>
+    </div>
+  </body>
+</html>
