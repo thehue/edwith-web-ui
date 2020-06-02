@@ -1,0 +1,29 @@
+속성 - vertical-align
+
+css를 통해서 텍스트를 수직, 수평 정렬 할 수 있습니다.
+그 중 vertical-align 속성을 이용하여 수직 정렬을 할 수 있습니다.
+이때 주의하실 점은 block 요소가 아닌 inline 또는 inline-block에서만 사용할 수 있습니다.
+따라서 display이 속성이 변하지 않은 div, p와 같은 블록레벨 요소에는 적용되지 않습니다.
+
+vertical-align 속성
+요소의 수직 정렬을 지정하는 속성입니다.
+기본값: baseline
+
+vertical-align: keyword | length | percent | initial | inherit;
+
+<속성값>
+
+* length: 요소를 지정한 길이만큼 올리거나 내림. 음수 허용
+* %: 요소를 inline-height를 기준으로 올리거나 내림. 음수 허용
+* keyword: baseline(기본 값), sub,  super, top, text-top, middle, bottom, text-bottom
+
+sub : 부모 아래 첨자 기준으로 정렬 
+super : 부모 위 첨자 기준으로 정렬 
+text-top : 부모 텍스트의 맨 위(Ascender 제외)  
+text-bottom : 부모의 텍스트의 맨 아래(Descender 제외) 
+middle : 부모의 중앙에 위치 
+top : 부모의 맨 위 위치 
+bottom : 부모의 맨 아래 위치
+
+baseline은 소문자 x를 기준으로 하단 라인을 의미
+
