@@ -1,0 +1,14 @@
+속성 - text-indent
+
+text-indent 속성
+텍스트의 들여쓰기를 지정하는 속성입니다. 
+  기본 값 : 0
+
+text-indent: length | initial | inherit;
+
+< 속성 값 >
+* length : px, em 등 고정 수치로 지정. 음수 허용
+* % : 부모 요소의 width를 기준으로 퍼센트로 지정
+
+* length : 문단의 첫 줄에 대한 들여쓰기를 수행합니다. 음수 값을 사용할 수 있으며, 음수 값 사용 시 왼쪽으로 이동합니다.
+* percent(%) : 텍스트를 포함하는 컨테이너 블록의 width(부모의 width)를 기준으로 변환된 백분율 값으로 들여쓰기합니다.
