@@ -1,0 +1,28 @@
+clear 속성
+
+요소를 floating 된 요소의 영향에서 벗어나게 하는 속성입니다.
+
+     기본 값 : none
+
+clear: none | left | right | both | initial | inherit;
+< 속성 값 >
+
+none
+
+양쪽으로 floating 요소를 허용(기본값)
+
+left
+
+왼쪽으로 floating 요소를 허용하지 않음
+
+right
+
+오른쪽으로 floating 요소를 허용하지 않음
+
+both
+
+양쪽으로 floating 요소를 허용하지 않음
+
+ 
+
+block-level 요소만 적용 가능
