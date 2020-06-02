@@ -1,0 +1,44 @@
+position 속성
+
+요소의 위치를 정하는 방법을 지정하는 속성입니다.
+
+기본 값 : static
+
+position: static | absolute | fixed | relative | sticky | initial | inherit;
+< 속성 값 >
+
+static
+Normal-flow 에 따라 배치되며 offset 값이 적용되지 않는다. (기본값)
+
+absolute
+부모 요소의 위치를 기준으로 offset 에 따라 배치된다.
+부모가 position 값(static 제외)을 가지면 offset 값의 시작점이 된다.
+* 부모의 position 값이 static 인 경우 조상의 position 값이 static이
+    아닐 때까지 거슬러 올라가 기준으로 삼습니다.
+Normal-flow의 흐름에서 벗어난다.
+
+fixed
+뷰포트(브라우저의 창)를 기준으로 offset 에 따라 배치된다.
+즉, 화면 스크롤에 관계없이 항상 화면의 정해진 위치에 정보가 나타난다.
+부모의 위치에 영향을 받지 않는다.
+
+relative
+자신이 원래 있어야 할 위치를 기준으로 offset 에 따라 배치된다.
+부모의 position 속성에 영향을 받지 않는다.
+Normal -flow의 흐름에 따른다.
+주변 요소에 영향을 주지 않으면서 offset 값으로 이동한다
+ 
+
+Normal-flow  란? 일반적인 상황에서 각의 요소들의 성질에 따라 배치 되는 순서(흐름)를 뜻합니다. 예를 들면, block 레벨 요소들은 상하로 배치되고, inline 레벨 요소들은 좌우로 배치되는 것을 말합니다.
+ 
+
+offset(top/left/bottom/right)
+
+top|bottom|left|right: auto|length|initial|inherit;
+top: 50%;
+left: 10px;
+bottom: -10px;
+right: auto;
+
+offset의 %단위 사용 이전에 padding과 margin에서 % 값을 적용할 때, 상하좌우 방향에 관계없이  가로 사이즈를 기준으로 %값을 계산된다고 배웠습니다. 
+그러나 offset은 top, bottom (상하) 는 기준이 되는 요소의 height 값 left, right (좌우) 는 width값에 대하여 계산되어집니다.
