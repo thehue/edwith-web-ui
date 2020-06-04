@@ -1,0 +1,80 @@
+html5에는 콘텐츠 모델이 있다
+여러가지 html요소들(태그들)을 각각 성격에 맞게 카테고리 분류를 만든것
+
+metada: 문서에 대한 다양한 정보들을 설정
+base, link, meta, noscript, style, title
+
+flow: body내의 대부분의 요소는 플로우 컨텐츠로 분류됨
+
+heading: 각 섹션의 머리말을 정의함
+h1, h2, h3, h4, h5, h6
+
+phrasing: 문단의 구성요소 (구문이 모여 문단이 됨)
+
+embedded: 문서에 그래픽이나 영상, 음성 등 다른 요소들을 삽입할 때
+
+interactive: 사용자와 웹사이트의 상호작용을 위한 요소들
+a, audio, button, iframe, img, input, label, textarea
+
+sectioing roots: body, blockquote, details, fieldser, figure, td
+-> 섹셔닝 루츠는 별개의 새로운 문서로 취급하기 때문에 그 하위에 있는 내용은 아웃라인에 포함을 안시킨다.
+
+sectioning: 문서의 내용을 분류하는 구역을 생성
+-> article, aside, nav, section
+-header, footer는 섹셔닝 요소에 포함x
+
+섹셔닝 요소는 outline(목차)를 만든다
+
+HTML4 웹 페이지에서는 헤딩이 목차와 같은 역할을 했지만
+HTML5에서는 sectioning이 만드는 구역과 heading이 조합하여 아웃라인을 만들고
+이 아웃라인이 목차의 역할을 한다.
+
+outline은 세가지 요소에 의해 결정된다
+sectioing, heading, sectioning roots
+
+섹션 요소는 구역(아웃라인)을 만듭니다
+body
+
+header
+nav  section  aside
+     header
+     article
+     footer
+footer
+
+->
+1. 섹션 body
+  1.섹션  nav
+  2.섹션  section
+    1.섹션  article
+  3.섹션 aside
+
+  각 섹션이 가진 헤딩이 이름이 된다.
+
+  <body>
+    <h1>우리집</h1>
+    <header></header>
+    <nav>
+      <h1>안방</h1>
+    </nav>
+    <section>
+      <h1>거실</h1>
+      <header></header>
+      <article>
+        <h1>주방</h1>
+      </article>
+      <footer></footer>
+    </section>
+    <aside>
+      <h1>창고</h1>
+    </aside>
+    <footer></footer>
+  </body>
+
+  1. 우리집
+    1.안방
+    2.거실
+      1.주방
+    3.창고
+
+  
