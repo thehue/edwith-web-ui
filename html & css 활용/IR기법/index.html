@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로모션</title>
+    <style>
+      /* reset */
+      ol {
+        list-style: none;
+      }
+
+      body,
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrap {
+        position: relative;
+        width: 1020px;
+        height: 650px;
+        margin: 0 auto;
+        background: url(./image/promotion.png) no-repeat 0 0;
+      }
+
+      .blind {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+
+      .link_point {
+        position: absolute;
+        bottom: 170px;
+        left: 193px;
+        width: 92px;
+        height: 12px;
+        opacity: 0.5;
+      }
+
+      .link_join {
+        position: absolute;
+        bottom: 82px;
+        left: 376px;
+        display: block;
+        width: 268px;
+        height: 61px;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="blind">알면 알수록 즐거운 네이버쇼핑 윈도시리즈</h1>
+      <p class="blind">쇼핑 즐기고 10%적립 혜택도 받으세요!</p>
+      <ol>
+        <li>
+          <strong class="blind">100 포인트만 있으면!</strong>
+          <p class="blind">
+            포인트 100원 이상 보유 시 신청 가능(신청 확인용으로 참가되지
+            않습니다.)
+          </p>
+          <a href="" class="link_point"
+            ><span class="blind">포인트가 부족하다면?</span></a
+          >
+        </li>
+        <li class="blind">
+          <strong>쇼핑윈도 시리즈 즐기고~</strong>
+          <p>11.15 ~ 11.30 누적 1만원 이상 구매</p>
+        </li>
+        <li class="blind">
+          <strong>구매금액 10%적립!</strong>
+          <p>최대 1만원 네이버 포인트 적립</p>
+        </li>
+      </ol>
+      <a href="" class="link_join"><span class="blind">신청하기</span></a>
+      <h2 class="blind">유의사항</h2>
+      <ul class="blind">
+        <li>BIG3 쇼핑 이벤트와 중복으로 신청하실 수 없습니다.</li>
+        <li>내부 사항에 따라 공지 없이 종료될 수 있습니다.</li>
+      </ul>
+    </div>
+  </body>
+</html>
