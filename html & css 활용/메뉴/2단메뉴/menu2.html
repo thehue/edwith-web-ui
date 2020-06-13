@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2단 메뉴</title>
+    <link rel="stylesheet" href="../../reset.css/reset.css" />
+    <style>
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .menu {
+        width: 700px;
+        margin: 20px auto 0;
+        text-align: center;
+      }
+
+      .menu_item {
+        display: inline-block;
+      }
+
+      .menu_link {
+        display: block;
+        padding: 13px 20px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #444;
+      }
+
+      .menu_item:hover .menu_link,
+      .menu_item.active .menu_link {
+        color: green;
+      }
+
+      /* menu에 active가 있을 경우에만 서브메뉴가 보임 */
+      .menu_item.active .submenu {
+        display: block;
+      }
+
+      .submenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-width: 700px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+      }
+
+      .submenu_item {
+        display: inline-block;
+      }
+      .submenu_link {
+        display: block;
+        padding: 15px 35px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #333;
+      }
+
+      .submenu_item:hover .submenu_link {
+        font-weight: bold;
+        color: lightseagreen;
+      }
+      .submenu_item.active .submenu_link {
+        font-weight: bold;
+        color: lightseagreen;
+      }
+      /* width에 맞추는 경우
+      .submenu_item {
+        position: relative;
+      }
+
+      
+      .submenu_item:hover .submenu_link::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        border-bottom: 2px solid lightseagreen;
+      } */
+      /* 글자 크기에 맞추는 경우*/
+      .submenu_item span {
+        position: relative;
+        /* inline 속성이기 때문에 알아서 글자 with에 맞춘다 */
+      }
+      .submenu_item:hover span::after,
+      .submenu_item.active span::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        border-bottom: 2px solid lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul class="menu">
+        <li class="menu_item active">
+          <a href="" class="menu_link"><span>웹툰</span></a>
+          <ul class="submenu">
+            <li class="submenu_item active">
+              <a href="" class="submenu_link"><span>요일별</span></a>
+            </li>
+            <li class="submenu_item">
+              <a href="" class="submenu_link"><span>장르별</span></a>
+            </li>
+            <li class="submenu_item">
+              <a href="" class="submenu_link"><span>작가별</span></a>
+            </li>
+            <li class="submenu_item">
+              <a href="" class="submenu_link"><span>연도별</span></a>
+            </li>
+            <li class="submenu_item">
+              <a href="" class="submenu_link"><span>작품별</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu_item"><a href="" class="menu_link">블로그</a></li>
+        <li class="menu_item"><a href="" class="menu_link">지식백과</a></li>
+        <li class="menu_item"><a href="" class="menu_link">카페</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
