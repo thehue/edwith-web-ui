@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2단 레이아읏(float)</title>
+    <link rel="stylesheet" href="../reset.css/reset.css" />
+    <style>
+      html,
+      body,
+      .wrap {
+        height: 100%;
+      }
+
+      header {
+        height: 100px;
+        background-color: lightgreen;
+      }
+
+      main {
+        position: relative;
+        width: 800px;
+        margin: -100px auto;
+        min-height: 100%;
+        padding: 100px 0;
+        box-sizing: border-box;
+      }
+
+      main::after {
+        display: block;
+        clear: both;
+        content: '';
+      }
+
+      section {
+        width: 500px;
+        height: 300px;
+        background-color: lightsalmon;
+        float: left;
+      }
+
+      aside {
+        width: 300px;
+        height: 300px;
+        background-color: greenyellow;
+        float: left;
+      }
+
+      aside::after {
+        position: absolute;
+        top: 100px;
+        right: 300px;
+        bottom: 100px;
+        content: '';
+        width: 5px;
+        background-color: #000;
+      }
+
+      footer {
+        height: 100px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>header</header>
+      <main>
+        <section>content</section>
+        <aside>aside</aside>
+      </main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
