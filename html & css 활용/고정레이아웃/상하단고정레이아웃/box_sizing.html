@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css/reset.css" />
+    <title>상,하단 고정 레이아웃(box-sizing)</title>
+    <style>
+      html,
+      body,
+      .wrap {
+        height: 100%;
+      }
+
+      .wrap {
+        min-width: 800px;
+        text-align: center;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: lightgreen;
+      }
+      .container {
+        min-height: 100%;
+        padding: 100px 0;
+        box-sizing: border-box;
+      }
+      .content {
+        max-width: 1200px;
+        height: 900px;
+        background-color: lightsalmon;
+        margin: 0 auto;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">header</div>
+      <div class="container">
+        <div class="content">content</div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
