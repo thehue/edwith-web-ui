@@ -1,0 +1,209 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+header {
+  overflow: hidden;
+  background-color: pink;
+  padding: 20px;
+}
+.logo {
+  float: left;
+  font-size: 20px;
+  color: #fff;
+}
+
+.gnb_menu {
+  display: none;
+}
+nav {
+  float: right;
+}
+nav a {
+  padding: 0 5px;
+  font-size: 20px;
+  color: #fff;
+}
+footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: lightgray;
+  font-size: 14px;
+  color: #000;
+}
+
+section {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.list {
+  overflow: hidden;
+  margin: -5px;
+}
+
+.list li {
+  float: left;
+  width: 20%;
+}
+
+.inner {
+  display: block;
+  border: 1px solid #000;
+  margin: 5px;
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  padding: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #555;
+}
+
+/* tablet 회전해도 태블릿 상태 유지 */
+@media screen and (max-width: 768px),
+  screen and (max-height: 768px) and (orientation: landscape) {
+  header {
+    background-color: lightseagreen;
+  }
+
+  .logo {
+    width: 100px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  nav {
+    margin-top: 20px;
+    float: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  nav a {
+    font-size: 25px;
+  }
+
+  footer {
+    background-color: lightcoral;
+    color: #fff;
+  }
+
+  .list {
+    margin: -4px;
+  }
+
+  .list li {
+    width: 25%;
+  }
+
+  .inner {
+    margin: 4px;
+    position: relative;
+  }
+
+  .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 10px 0;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 375px),
+  screen and (max-height: 375px) and (orientation: landscape) {
+  header {
+    padding: 10px 0;
+  }
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: 0;
+    display: none;
+    width: 200px;
+    background-color: lightslategray;
+  }
+
+  nav a {
+    display: block;
+    padding: 20px 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .gnb_menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 40px;
+    height: 35px;
+    font-size: 1px;
+    color: transparent;
+    background: linear-gradient(#fff 50%, transparent 50%);
+    background-size: 100% 10px;
+  }
+
+  .list li {
+    width: 100%;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  .inner {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid;
+  }
+
+  .thumb {
+    display: table-cell;
+    width: 100px;
+  }
+
+  .title {
+    display: table-cell;
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #000;
+    text-overflow: inherit;
+    text-align: left;
+    white-space: inherit;
+    padding: 8px;
+  }
+}
