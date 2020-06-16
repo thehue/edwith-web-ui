@@ -1,0 +1,13 @@
+여러 브라우저 placeholder 슈도 클래스 적용법
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1 */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Expolorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
